@@ -4,7 +4,7 @@ import Users from "./Users";
 
 function Dashboard() {
   return (
-    <div className="w-full h-[100vh] bg-zinc-100 px-[4vw]">
+    <div className="w-full h-[100vh] bg-zinc-100 px-[4vw] overflow-hidden">
       <Topbar />
       <Balance />
       <Users />

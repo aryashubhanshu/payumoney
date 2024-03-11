@@ -7,7 +7,7 @@ import Button from "./Button";
 function Signin() {
   return (
     <div className="w-full h-[100vh] flex items-center justify-center bg-zinc-100">
-      <form className="max-sm:w-[80%] max-md:w-[60%] max-lg:w-[50%] w-[30%] px-8 py-4 border border-zinc-300 rounded-xl shadow-md bg-white">
+      <div className="max-sm:w-[80%] max-md:w-[60%] max-lg:w-[50%] w-[30%] px-8 py-4 border border-zinc-300 rounded-xl shadow-md bg-white">
         <Heading title="Sign In" />
         <Subheading title="Enter your credentials to access your account" />
 
@@ -22,7 +22,7 @@ function Signin() {
             Sign Up
           </Link>
         </p>
-      </form>
+      </div>
     </div>
   );
 }
