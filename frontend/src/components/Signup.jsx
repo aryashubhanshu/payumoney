@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Heading from "./Heading";
 import Subheading from "./Subheading";
 import InputBox from "./InputBox";
@@ -11,6 +11,7 @@ function Signup() {
   const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   return (
     <div className="w-full h-[100vh] flex items-center justify-center bg-zinc-100">
@@ -51,6 +52,7 @@ function Signup() {
               }
             );
             localStorage.setItem("token", response.data.token);
+            navigate("/dashboard");
           }}
           label={"Sign up"}
         />
